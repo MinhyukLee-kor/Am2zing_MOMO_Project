@@ -99,7 +99,7 @@ public class BoardController {
         return "redirect:/post/{boardNum}";
 		}
     }
-	
+	//딜리트 매핑..
 	@DeleteMapping("/post/{boardNum}")
     public String delete(@PathVariable("boardNum") Long boardNum) {
 		List<Board> boards = boardService.getBoardList(boardNum);
